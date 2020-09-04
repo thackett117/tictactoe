@@ -1,0 +1,42 @@
+#board {
+    padding: 3em;
+    text-align: center;
+}
+.row > div {
+    float: left;
+    height: 100px;
+    width: 100px;
+}
+.row {
+    clear: both;
+    margin: 0 auto;
+    width: 302px;
+}
+.topleft {
+    border-bottom: 1px black solid;
+    border-right: 1px black solid;
+}
+.topmiddle {
+    border-bottom: 1px black solid;
+}
+.topright {
+    border-bottom: 1px black solid;
+    border-left: 1px black solid;
+}
+.bottomleft{
+    border-top: 1px black solid;
+    border-right: 1px black solid;
+}
+.bottommiddle {
+    border-top: 1px black solid;
+}
+.bottomright {
+    border-top: 1px black solid;
+    border-left: 1px black solid;
+}
+.middleleft {
+    border-right: 1px black solid;
+}
+.middleright {
+    border-left: 1px black solid;
+}
