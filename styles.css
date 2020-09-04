@@ -12,42 +12,22 @@
     margin: 0 auto;
     width: 302px;
 }
-.topleft {
-    border-bottom: 1px black solid;
-    border-right: 1px black solid;
-    cursor: pointer;
+.top {
+border-bottom: 1px black solid;
+cursor: pointer;
 }
-.topmiddle {
-    border-bottom: 1px black solid;
-    cursor: pointer;
-}
-.topright {
-    border-bottom: 1px black solid;
-    border-left: 1px black solid;
-    cursor: pointer;
-}
-.bottomleft{
-    border-top: 1px black solid;
-    border-right: 1px black solid;
-    cursor: pointer;
-}
-.bottommiddle {
-    border-top: 1px black solid;
-    cursor: pointer;
-}
-.bottomright {
-    border-top: 1px black solid;
-    border-left: 1px black solid;
-    cursor: pointer;
-}
-.middleleft {
-    border-right: 1px black solid;
-    cursor: pointer;
-}
-.middleright {
-    border-left: 1px black solid;
-    cursor: pointer;
-}
+.bottom {
+border-top: 1px black solid;
+ cursor: pointer;
+ }
+ .left {
+ border-right: 1px black solid;
+ cursor: pointer;
+ }
+.right {
+ border-left: 1px black solid;
+ cursor: pointer;
+ }
 .center {
     cursor: pointer;
-}
+ }
