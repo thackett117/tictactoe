@@ -1,24 +1,10 @@
 let cells = document.querySelectorAll('.row > div');
+
 let shape = "X";
+
 let cellCount = 0;
 
-for (let i = 0; i < cells.length; i++) {
-    cells[i].addEventListener('click', cellClicked);
-};
-
-
-
-//Function to place shapes and alternate between them
-function cellClicked (cell) {
-    if (cell.target.textContent == "") {
-        cell.target.textContent = shape;
-        checkWin();
-    } if (shape == "X") {
-        shape = 'O';
-    }else {
-        shape = "X";
-    }
-};
+let winner = document.getElementById("winnerTag");
 
 //An array of arrays of win conditions
 let winConditions = [
@@ -33,6 +19,26 @@ let winConditions = [
 ];
 
 
+for (let i = 0; i < cells.length; i++) {
+    cells[i].addEventListener('click', cellClicked);
+};
+
+
+//Function to place shapes and alternate between them
+function cellClicked (cell) {
+    if (cell.target.textContent == "") {
+        cell.target.textContent = shape;
+        checkWin();
+    } if (shape == "X") {
+        shape = 'O';
+    }else {
+        shape = "X";
+    }
+};
+
+
+
+
 function checkWin() {
     cellCount++
     for (i = 0; i < winConditions.length; i++) {
@@ -42,17 +48,17 @@ function checkWin() {
                 shapeCount++
             };
             if (shapeCount == 3) {
-                alert(shape + " Has Won!");
+                winner.innerHTML = shape + "'s Have Won!";
                 reset();
                 return;
             }
             if (cellCount == 9 && shapeCount == 3) {
-                alert(shape + " Has Won!");
+                winner.innerHTML = shape + "'s Have Won!";
                 reset();
                 return;
             }
             else if (shapeCount != 3 && cellCount == 9) {
-                alert ("It's a tie!");
+                winner.innerHTML = "It's a Tie!";
                 reset();
                 return;
             }
@@ -63,7 +69,7 @@ function checkWin() {
 
 function reset() {
     for (i = 0; i < cells.length; i++) {
-        cells[i].innerHTML = ''
+        cells[i].textContent = ''
         shape = 'O'
         cellCount = 0
     }

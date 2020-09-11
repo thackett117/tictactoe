@@ -1,6 +1,15 @@
+
+
 #board {
     padding: 3em;
     text-align: center;
+}
+
+h2 {
+    padding: 2em;
+    text-align: center;
+    height: 50px;
+    width: 750px
 }
 
 .row {
