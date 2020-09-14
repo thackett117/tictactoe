@@ -26,6 +26,7 @@ for (let i = 0; i < cells.length; i++) {
 
 //Function to place shapes and alternate between them
 function cellClicked(cell) {
+    if (cell.target.textContent != "") return;
     if (cell.target.textContent == "") {
         cell.target.textContent = shape;
         checkWin();
