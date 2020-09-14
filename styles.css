@@ -1,6 +1,7 @@
 
 body {
     background-color: black;
+    font-family: "Space Mono", serif;
 }
 #board {
     padding: 3em;
