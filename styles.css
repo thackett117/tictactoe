@@ -12,6 +12,8 @@ body {
 h2 {
     padding: 2em;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
     color: yellow;
     height: 50px;
     width: 750px;

@@ -56,7 +56,7 @@ function checkWin() {
                 winner.innerHTML = shape + "'s Have Won!";
                 gameOver = true;
                 return;
-            } if (shapeCount != 3 && cellCount == 9) {
+            }else if (shapeCount != 3 && cellCount == 9) {
                 winner.innerHTML = "It's a Tie!";
                 gameOver = true;
                 let snd = new Audio("WilhelmScream.mp3");
