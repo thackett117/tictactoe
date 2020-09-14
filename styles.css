@@ -1,15 +1,29 @@
 
-
+body {
+    background-color: black;
+}
 #board {
     padding: 3em;
     text-align: center;
+    color: yellow;
 }
 
 h2 {
     padding: 2em;
     text-align: center;
+    color: yellow;
     height: 50px;
-    width: 750px
+    width: 750px;
+}
+button {
+    margin-bottom: 3em;
+    background-color: black;
+    color: yellow;
+}
+
+button:hover {
+    background-color: blue;
+    cursor: pointer;
 }
 
 .row {
@@ -28,14 +42,14 @@ h2 {
 }
 
 .top {
-border-bottom: 1px black solid;
+border-bottom: 1px yellow solid;
 }
 .bottom {
-border-top: 1px black solid;
- }
- .left {
- border-right: 1px black solid;
- }
+border-top: 1px yellow solid;
+}
+.left {
+border-right: 1px yellow solid;
+}
 .right {
- border-left: 1px black solid;
- }
+border-left: 1px yellow solid;
+}
